@@ -43,4 +43,5 @@ plugins:
 #   - vendor/ruby/
 
 collections:
-  - posts
+  posts:
+    output: false
