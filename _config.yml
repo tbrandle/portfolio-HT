@@ -44,4 +44,4 @@ plugins:
 
 collections:
   posts:
-    output: false
+    output: true
