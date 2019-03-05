@@ -45,3 +45,7 @@ plugins:
 collections:
   posts:
     output: true
+  projects:
+    output: true
+  skills:
+    output: true
