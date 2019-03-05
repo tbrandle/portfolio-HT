@@ -1,8 +1,8 @@
 ---
 title:
 _date:
-logo_img:
-gif_file:
+logo_path:
+gif_path:
 description:
 website_url:
 github_url:
