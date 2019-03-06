@@ -4,7 +4,7 @@ _date: null
 logo_path: /upload/image/png/1551909511313_logo_path_boldbetties.png
 gif_path: null
 description_content: OUTDOOR ADVENTURE FOR WOMEN
-website_url: null
+website_url: 'https://www.boldbetties.com/'
 github_url: null
 categories: null
 
