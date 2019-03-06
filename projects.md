@@ -5,7 +5,6 @@ permalink: /projects/
 ---
 
 {% for project in site.projects %}
-  <div>
     <h2>    
       {{ project.title }}
     </h2>
@@ -13,5 +12,4 @@ permalink: /projects/
     <div>{{ project.description}} </div>
     <div><a href={{project.website_url}}>{{ project.website_url }} </a></div>
     <div><a href={{project.github_url}}>{{ project.github_url }} </a></div>
-  </div>
 {% endfor %}
