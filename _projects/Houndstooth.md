@@ -8,7 +8,7 @@ description: >-
   to publish changes to static sites hosted on Github.
 website_url: www.houndstooth.could
 github_url: 'https://github.com/bowtie-co/react-houndstooth-recompose'
-categories: null
+categories: []
 
 ---
 
