@@ -3,7 +3,7 @@ title:
 _date:
 logo_path:
 gif_path:
-description:
+description_content:
 website_url:
 github_url:
 categories:
