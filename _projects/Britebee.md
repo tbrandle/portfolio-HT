@@ -3,7 +3,7 @@ title: BriteBee
 _date: 03/06/2019
 logo_path: /upload/image/png/1551909330408_logo_path_BriteBee-logo-grad.png
 gif_path: null
-description: descriptions descriptions descriptions
+description_content: descriptions descriptions descriptions
 website_url: 'https://app.britebee.com'
 github_url: null
 categories: null

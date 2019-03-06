@@ -3,7 +3,7 @@ title: BoldBetties
 _date: null
 logo_path: /upload/image/png/1551909511313_logo_path_boldbetties.png
 gif_path: null
-description: null
+description_content: null
 website_url: null
 github_url: null
 categories: null
