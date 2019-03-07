@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+{%- include header.html -%}
+
+{%- for section in site.sections -%}
+  {{ section.content }}
+{%- endfor -%}
+
+<!-- lazy load css -->
+<script type="text/javascript">
+  var css = [
+      // 'bootstrap.min.css',
+      'font-awesome.min.css',
+      'magnific-popup.css',
+      'main.min.css',
+      'colors/blue.css',
+      'style.css'
+  ];
+
+  for (i in css) {
+      var head  = document.getElementsByTagName('head')[0];
+      var link  = document.createElement('link');
+      link.rel  = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'css/' + css[i];
+      link.media = 'all';
+      head.appendChild(link);
+  }
+</script>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/jquery.nav.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.easypiechart.min.js"></script>
+<script src="js/jquery.vegas.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/main.js"></script>
