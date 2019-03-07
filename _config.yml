@@ -26,7 +26,7 @@ github_username:  tbrandle
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: forty_jekyll_theme
 plugins:
   - jekyll-feed
 
