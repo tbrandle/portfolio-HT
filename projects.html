@@ -4,39 +4,45 @@ title: Projects
 permalink: /projects/
 ---
 
-<div class='row project-preview-section'>
-  {% for project in site.projects %}
+{%- include helper_styles.html -%}
+  {%- include project_styles.html -%}
 
-  <div class='col-sm-6 flex-column flex-center'>
+  <div class='container'>
 
-    <div class='flex-column'>
+  <div class="row project-preview-sectionr">
+    {% for project in site.projects %}
 
-      <div class='flex-row'>
-        <div class='logo-container'>
-          <img class='project-logo' src={{project.logo_path}} />
+    <div class="col-sm-6 flex-column flex-center">
+
+      <div class="flex-column">
+
+        <div class="flex-row">
+          <div class="logo-container">
+            <img class="project-logo" src={{project.logo_path}} />
+          </div>
+
+          <div>
+            <div class="project-title">{{ project.title }}</div>
+
+            <div>{{ project.description_content }} </div>
+          </div>
         </div>
 
-        <div>
-          <div class='project-title'>{{ project.title }}</div>
-
-          <div>{{ project.description_content }} </div>
+        <div class="flex center view-project">
+          <a href="/work/">View Project ------->
+          </a>
         </div>
-      </div>
 
-      <div class='flex center view-project'>
-        <a href='/work/'>View Project ------->
-        </a>
       </div>
 
     </div>
-
-  </div>
-  <div class='col-sm-6 flex-column flex-center'>
-    <div>
-      <img src={{project.screenshot}} class='project-preview-img left' />
+    <div class="col-sm-6 flex-column flex-center">
+      <div>
+        <img src={{project.screenshot_path}} class="project-preview-img left" />
+      </div>
     </div>
+    <!-- <div><a href={{project.website_url}}>{{ project.website_url }} </a></div>
+        <div><a href={{project.github_url}}>{{ project.github_url }} </a></div> -->
+    {% endfor %}
   </div>
-  <!-- <div><a href={{project.website_url}}>{{ project.website_url }} </a></div>
-      <div><a href={{project.github_url}}>{{ project.github_url }} </a></div> -->
-  {% endfor %}
 </div>
