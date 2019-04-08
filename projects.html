@@ -4,14 +4,39 @@ title: Projects
 permalink: /projects/
 ---
 
-{% for project in site.projects %}
-  <div>
-    <h2>    
-      {{ project.title }}
-    </h2>
-    <img src={{project.logo_path}}>
-    <div>{{ project.description_content }} </div>
-    <div><a href={{project.website_url}}>{{ project.website_url }} </a></div>
-    <div><a href={{project.github_url}}>{{ project.github_url }} </a></div>
+<div class='row project-preview-section'>
+  {% for project in site.projects %}
+
+  <div class='col-sm-6 flex-column flex-center'>
+
+    <div class='flex-column'>
+
+      <div class='flex-row'>
+        <div class='logo-container'>
+          <img class='project-logo' src={{project.logo_path}} />
+        </div>
+
+        <div>
+          <div class='project-title'>{{ project.title }}</div>
+
+          <div>{{ project.description_content }} </div>
+        </div>
+      </div>
+
+      <div class='flex center view-project'>
+        <a href='/work/'>View Project ------->
+        </a>
+      </div>
+
+    </div>
+
   </div>
-{% endfor %}
+  <div class='col-sm-6 flex-column flex-center'>
+    <div>
+      <img src={{project.screenshot}} class='project-preview-img left' />
+    </div>
+  </div>
+  <!-- <div><a href={{project.website_url}}>{{ project.website_url }} </a></div>
+      <div><a href={{project.github_url}}>{{ project.github_url }} </a></div> -->
+  {% endfor %}
+</div>
